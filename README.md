@@ -1,5 +1,7 @@
 # Intent Classification with Feedforward Neural Network
 
+[Overview](#overview) | [Features](#features) | [Requirements](#requirements) | [Project Structure](#project-structure) | [Usage](#usage) | [Implementation Details](#implementation-details) | [Dataset](#dataset)
+
 ## Overview
 Implementation of a Feedforward Neural Network for intent classification using only Python and NumPy. The model classifies user intents from text input using the Sonos NLU Benchmark dataset.
 
