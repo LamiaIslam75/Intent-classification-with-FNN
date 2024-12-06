@@ -45,7 +45,7 @@ def main():
     
     # Initialize the model
     input_size = X.shape[0]  # vocabulary size
-    hidden_size = 150        # as specified in the assignment
+    hidden_size = 150        
     num_classes = Y.shape[0] # number of unique intents
     model = NeuralNetwork(input_size, hidden_size, num_classes)
     ##################################################################

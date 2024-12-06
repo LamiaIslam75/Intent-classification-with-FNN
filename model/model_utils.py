@@ -30,8 +30,7 @@ def bag_of_words_matrix(sentences: List[str]) -> npt.ArrayLike:
     for col, sentence in enumerate(sentences):
         words = sentence.lower().split()
         for word in words:
-            # If word is not in vocab (appears < 2 times), use <UNK>
-            idx = vocab_to_idx.get(word, 0) if word_freq.get(word, 0) >= 2 else 0
+            idx = vocab_to_idx.get(word, 0)
             bow_matrix[idx, col] += 1
             
     return bow_matrix

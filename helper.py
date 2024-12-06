@@ -1,3 +1,4 @@
+
 from model.ffnn import NeuralNetwork, compute_loss
 import matplotlib
 matplotlib.use('Agg')
@@ -33,8 +34,7 @@ def batch_train(X, Y, model, train_flag=False):
         costs = []  # To store cost values for plotting
         
         for epoch in range(epochs):
-            # Forward pass
-            predictions = model.forward(X)
+            predictions = model.predict(X)
             
             # Compute cost
             cost = compute_loss(predictions, Y)
@@ -130,8 +130,7 @@ def minibatch_train(X, Y, model, train_flag=False):
                 X_batch = X[:, batch_indices]
                 Y_batch = Y[:, batch_indices]
                 
-                # Forward pass
-                predictions = model.forward(X_batch)
+                predictions = model.predict(X_batch)
                 
                 # Compute cost
                 cost = compute_loss(predictions, Y_batch)
