@@ -112,7 +112,7 @@ class NeuralNetwork(object):
         # Get batch size
         M = X.shape[1]
         
-        # Forward pass (ensure we have the latest activations)
+        # Forward pass
         self.forward(X)
         
         # Output layer error (δL = ŷ - y)

@@ -71,6 +71,8 @@ def batch_train(X, Y, model, train_flag=False):
     plt.grid(True)
     plt.savefig('training_cost.png')
     plt.close()
+
+    print("\nCost plot has been saved as 'training_cost.png'")
     
     print("\nResults Comparison:")
     print(f"Before training accuracy: {initial_accuracy * 100:.2f}%")
